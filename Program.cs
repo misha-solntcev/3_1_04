@@ -38,6 +38,16 @@ namespace _3_1_04
                 }
             Console.WriteLine($"first = {first}");
 
+            // Второй нулевой элемент массива:
+            int second = 0;
+            for (int i = first + 1; i < elems.Length; i++)
+                if (elems[i] == 0)
+                {
+                    second = i;
+                    break;
+                }
+            Console.WriteLine($"second = {second}");
+
             Console.ReadKey();
         }
     }
