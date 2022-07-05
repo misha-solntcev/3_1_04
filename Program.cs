@@ -27,8 +27,16 @@ namespace _3_1_04
                     num = i;
                 }
             Console.WriteLine($"max = {max}, num = {num}");
-            
 
+            // Первый нулевой элемент массива:
+            int first = 0;
+            for (int i = 0; i < elems.Length; i++)
+                if (elems[i] == 0)
+                {
+                    first = i;
+                    break;
+                }
+            Console.WriteLine($"first = {first}");
 
             Console.ReadKey();
         }
