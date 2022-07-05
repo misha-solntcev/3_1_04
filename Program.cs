@@ -48,6 +48,12 @@ namespace _3_1_04
                 }
             Console.WriteLine($"second = {second}");
 
+            // Произведение
+            int prod = 1;
+            for (int i = first + 1; i < second; i++)
+                prod *= elems[i];
+            Console.WriteLine($"prod = {prod}");
+
             Console.ReadKey();
         }
     }
